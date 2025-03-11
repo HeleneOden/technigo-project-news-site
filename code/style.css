@@ -1,5 +1,5 @@
-/* Smartphone  */
-@media only screen and (max-width: 500px) {
+/* Smartphone - mobile first */
+@media (max-width: 667px) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -11,13 +11,14 @@
 
 
 /* Tablet  */
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 668px) and (max-width: 1024px) {
 
 
 }
 
 /* Desktop  */
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 1025px)
+ {
 
 } 
 
@@ -32,14 +33,13 @@ font-size: 25px;
 .navbar {
   display: flex; /* Använder Flexbox för att ordna innehållet */
   justify-content: flex-end; /* Placera hela menyn till höger */
-  padding: 10px; /* Padding runt hela navigeringen (kan justeras) */
+  padding: 20px; /* Padding runt hela navigeringen (kan justeras) */
+  margin:10px;
 
 }
 
 .navbar ul {
   list-style: none; /* Tar bort standardpunkter från listan */
-  margin: 0; /* Tar bort default marginal */
-  padding: 0; /* Tar bort padding från listan */
   display: flex; /* Använder flexbox för att ordna listobjekten i rad */
 }
 
@@ -52,16 +52,38 @@ font-size: 25px;
   color: #333; /* Sätter färg på länkarna, kan ändras */
   font-size: 18px; /* Sätter textstorleken för länkarna */
   font-weight: bold; /* Gör texten fet om du vill */
+  transition: color 0.3s ease-in-out; /* Lägg till en övergångseffekt */
+}
+
+.navbar a:hover {
+  color: #cad1d8; /* Ändra färg vid hover */
 }
 
 
 .image-container {
   width: 100%; /* Bredden på div:en */
   height: 100%; /* Höjden på div:en */
-  border: 2px solid #000; /* En valfri kant runt div:en */
+   */
 }
 
 .image-container img {
   width: 100%; /* Gör att bilden täcker hela div:en */
   height: 100%; /* Behåller bildens proportioner */
 }
+
+.pictures {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px; /* Optional: Adds space between grid items */
+ 
+}
+
+.text-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+ 
+} 

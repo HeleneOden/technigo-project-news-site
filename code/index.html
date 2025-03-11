@@ -11,7 +11,12 @@
   <body>
     <header>
       <!-- Some kind of logo and navbar -->
-      
+      <div class="search-container">
+        <form action="/sokresultat" method="get">
+            <input type="text" name="search" placeholder="Sök här..." class="search-box" required>
+            <button type="submit" class="search-btn">Sök</button>
+        </form>
+    </div>
        <nav class="navbar">
         <ul>
           <li><a href="#">Hem</a></li>
@@ -24,21 +29,47 @@
       </header>
 
 
- <section class="big-news">
+    <section class="big-news">
      
   <div class="header">
-    <h2>ALPERNA</h2>
+    <h3>Planera ditt nästa vinteräventyr!</h3>
+    <p> Vintertiden är magisk – låt oss guida dig till den bästa upplevelsen!</p>
   </div>
       
-     <div class="image-container">
-        <img src="./assets/berg.jpg" alt="Beskrivning av bilden">
+  <div class="image-container">
+        <img src="./assets/car-in-the-mounain.jpg" alt="Beskrivning av bilden">
+  </div>
+      <h2>Välkommen till WinterAdventures – din ultimata guide till oförglömliga vinterupplevelser! Hos oss hittar du de bästa vinterdestinationerna för skidåkning, vintrig fjällvandring, hundspann, isfiske och unika snöevenemang. Oavsett om du söker den perfekta skidorten för nästa vintersemester, drömmer om att uppleva det magiska norrskenet eller vill testa på en äventyrlig hundspannstur genom snötäckta landskap, har vi något för dig.</h2>
+
+    </section>
+
+
+    <section class="pictures">
+      <div class="image-container">
+        <img src="./assets/dog-human.jpg" alt="Beskrivning av bilden">
+       <div class="text-image"><p>Fjällvandring</p></div> 
       </div>
+      <div class="image-container">
+        <img src="./assets/skiing.jpg" alt="Beskrivning av bilden">
+        <div class="text-image"><p>Skidåkning</p></div> 
+      </div>
+      <div class="image-container">
+        <img src="./assets/house-in-the-mountain.jpg" alt="Beskrivning av bilden">
+        <div class="text-image"><p>Boende</p></div> 
+      </div>
+      <div class="image-container">
+        <img src="./assets/norrsken.jpg" alt="Beskrivning av bilden">
+        <div class="text-image"><p>Adventure</p></div> 
+      </div>
+    </section>
+
+
+
+    
+
+     <section> <p>Vi erbjuder skräddarsydda resepaket, exklusiva boenden och unika vinteraktiviteter som tar dig bortom det vanliga och in i vinterparadiset. Utforska de bästa platserna för isfiske, njut av spektakulära snöevenemang och upptäck fjällens hemligheter med vintrig vandring. WinterAdventures gör det enkelt att planera din nästa vinterresa och ge dig de bästa upplevelserna denna kalla säsong har att erbjuda.</p></section>
       
-
-    </section>
-
-    <section class="">
-      <!-- The other news  -->
-    </section>
+      <footer>
+        <p>WinterAdventures &copy; 2021</p>
   </body>
 </html>
