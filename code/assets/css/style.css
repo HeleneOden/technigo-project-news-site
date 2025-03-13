@@ -50,7 +50,7 @@ font-size: 25px;
 .navbar a {
   text-decoration: none; /* Tar bort understrykning från länkar */
   color: #333; /* Sätter färg på länkarna, kan ändras */
-  font-size: 18px; /* Sätter textstorleken för länkarna */
+  font-size: 25px; /* Sätter textstorleken för länkarna */
   font-weight: bold; /* Gör texten fet om du vill */
   transition: color 0.3s ease-in-out; /* Lägg till en övergångseffekt */
 }

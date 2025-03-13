@@ -1,75 +1,96 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Change the title below -->
-    <title>Flowers</title>
-    <link rel="stylesheet" href="./style.css" />
-   
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <header>
-      <!-- Some kind of logo and navbar -->
-      <div class="search-container">
-        <form action="/sokresultat" method="get">
-            <input type="text" name="search" placeholder="Sök här..." class="search-box" required>
-            <button type="submit" class="search-btn">Sök</button>
-        </form>
-    </div>
-       <nav class="navbar">
-        <ul>
-          <li><a href="#">Hem</a></li>
-          <li><a href="#">Om oss</a></li>
-          <li><a href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      
-   
-      </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project one: My newssite</title>
+  <meta name="description" content="This is my first project in the course Web developer by Technigo: News site, individual project. Get started with building responsive design using flexbox, CSS grid and media queries.">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">News</a>
+      <a href="index.html">Archive</a>
+      <a href="index.html">About</a>
+      <a href="index.html">Contact</a>
+    </nav>
+
+  </header>
+
+<main>
+  <section class="welcome">
+  <article>
+    <h1>Welcome to today's adventure!</h1>
+<p>
+  Your daily source of news, articles, and incredible experiences — for the fearless at heart.
+</p>
+<p>
+  Here you will find the latest news about the most thrilling adventures worldwide. We'll take you to breathtaking destinations and share unforgettable experiences. Meet extraordinary people who have accomplished the unimaginable, and let their stories inspire you to embark on your own adventure!
+</p>
+  </article>
+  </section>
+
+<section class="articles">
+  <ul>
+    <li id="main-article">
+      <figure>
+        <img src="./assets/snowwalk.jpg" alt="two people walking in the snow">
+        <figcaption>
+          <h2>Walking in a winter wonderland</h2>
+        </figcaption>
+     </figure>
+     <p> 
+        The snow is falling, and the temperature is dropping. You are on the top of the mountain and you have no bagage with you. What would you do to survive in the wilderness and the coldness?
+     </p>
+     <a href="#">How to survive in the wilderness in the middle of the vinter?</a>
+    </li>
+
+    <li id="article-1">
+      <figure>
+        <img src="./assets/snowwalk.jpg" alt="two people walking in the snow">
+        <figcaption>
+          <h2>Walking in a winter wonderland</h2>
+        </figcaption>
+     </figure>
+     <p> 
+        The snow is falling, and the temperature is dropping. You are on the top of the mountain and you have no bagage with you. What would you do to survive in the wilderness and the coldness?
+     </p>
+     <a href="#">How to survive in the wilderness in the middle of the vinter?</a>
+    </li>
+    <li id="article-2">
+      <figure>
+        <img src="./assets/snowwalk.jpg" alt="two people walking in the snow">
+        <figcaption>
+          <h2>Walking in a winter wonderland</h2>
+        </figcaption>
+     </figure>
+     <p> 
+        The snow is falling, and the temperature is dropping. You are on the top of the mountain and you have no bagage with you. What would you do to survive in the wilderness and the coldness?
+     </p>
+     <a href="#">How to survive in the wilderness in the middle of the vinter?</a>
+    </li>
 
 
-    <section class="big-news">
-     
-  <div class="header">
-    <h3>Planera ditt nästa vinteräventyr!</h3>
-    <p> Vintertiden är magisk – låt oss guida dig till den bästa upplevelsen!</p>
-  </div>
-      
-  <div class="image-container">
-        <img src="./assets/car-in-the-mounain.jpg" alt="Beskrivning av bilden">
-  </div>
-      <h2>Välkommen till WinterAdventures – din ultimata guide till oförglömliga vinterupplevelser! Hos oss hittar du de bästa vinterdestinationerna för skidåkning, vintrig fjällvandring, hundspann, isfiske och unika snöevenemang. Oavsett om du söker den perfekta skidorten för nästa vintersemester, drömmer om att uppleva det magiska norrskenet eller vill testa på en äventyrlig hundspannstur genom snötäckta landskap, har vi något för dig.</h2>
-
-    </section>
-
-
-    <section class="pictures">
-      <div class="image-container">
-        <img src="./assets/dog-human.jpg" alt="Beskrivning av bilden">
-       <div class="text-image"><p>Fjällvandring</p></div> 
-      </div>
-      <div class="image-container">
-        <img src="./assets/skiing.jpg" alt="Beskrivning av bilden">
-        <div class="text-image"><p>Skidåkning</p></div> 
-      </div>
-      <div class="image-container">
-        <img src="./assets/house-in-the-mountain.jpg" alt="Beskrivning av bilden">
-        <div class="text-image"><p>Boende</p></div> 
-      </div>
-      <div class="image-container">
-        <img src="./assets/norrsken.jpg" alt="Beskrivning av bilden">
-        <div class="text-image"><p>Adventure</p></div> 
-      </div>
-    </section>
 
 
 
-    
 
-     <section> <p>Vi erbjuder skräddarsydda resepaket, exklusiva boenden och unika vinteraktiviteter som tar dig bortom det vanliga och in i vinterparadiset. Utforska de bästa platserna för isfiske, njut av spektakulära snöevenemang och upptäck fjällens hemligheter med vintrig vandring. WinterAdventures gör det enkelt att planera din nästa vinterresa och ge dig de bästa upplevelserna denna kalla säsong har att erbjuda.</p></section>
-      
-      <footer>
-        <p>WinterAdventures &copy; 2021</p>
-  </body>
+
+
+  </ul>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+</main>
+  
+</body>
 </html>
