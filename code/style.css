@@ -3,10 +3,20 @@ html {
     height: 100vh;
 }
 
+
 body {
-    background: #e18da8;
+    background: lightgray;
     font-family: 'Nunito', sans-serif;
     margin: 0 auto;
+    
+
+    .person-saying {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #333;
+        text-align: center;
+    }   
+    
 }
 
     /* remove the bullet points and padding */
@@ -21,7 +31,7 @@ ul {
     minor transition for smoothness */
 a {
     color: white;
-    background-color: #3f7a5d;
+    background-color: black;
     text-decoration: none;
     letter-spacing: 0.08rem;
     transition: all 0.1s;
@@ -31,23 +41,66 @@ a {
     (!) because the nav is of the same colour as <a>
     we mimic opacity: 0.8 with a lighter colour */
 a:hover {
-    background-color: #d7d7dd;
+    
+    text-decoration-line: underline;
 }
 
-    /* put the nav at the top with a colour */
+
+
+
+
+.logo {
+    font-weight: bold;
+    background-image: url(../code/assets/img/transparent_image_v2.png); /* Ersätt med din logotyp */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 500px; /* Anpassa bredden */
+    height: 20px; /* Anpassa höjden */
+    display: inline-block;
+}
+
+
+
+
+
+
+.nav {
+    display: flex;
+    gap: 20px; /* Mellanrum mellan länkar */
+    background-color: black;
+    padding: 10px 20px;
+}
+
+
+    /* put the nav at the top with a colour 
 .nav {
     position: relative;
-    top: 0;
-    background-color: #aba0d6;
+    top: 10px;
+    background-color: black;
     overflow: hidden;
-}
+}*/
 
-    /* make the links into blocks */
+    /* make the links into blocks 
 .nav a {
     float: left;
     display: block;
     text-align: center;
-    padding: 24px;
+    padding: 30px;
+}*/
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+/* logo 
+.logo {
+    background: url(../code/assets/img/transparent_image_v2.png) no-repeat center;
+    width: 200px;
+    height: 250px;
+    display: block;
+    /* margin-left: 30px; */
 }
 
     /* hide the menu icon (wide screens) */
@@ -56,19 +109,10 @@ a:hover {
 }
 
 .articles {
-    max-width: 1280px;
+    max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
 }
-.welcome h1{
-    font-size: 25px;
-    color: #3f7a5d;
-}
-
-.welcome p{
-    font-size: 20px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
 
 
     /* when <646px, hide all links except the first one (paw)
