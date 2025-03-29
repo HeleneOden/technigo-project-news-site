@@ -5,7 +5,7 @@ html {
 
 
 body {
-    background: lightgray;
+    background: transparent;
     font-family: 'Nunito', sans-serif;
     margin: 0 auto;
     
@@ -29,78 +29,47 @@ ul {
     /* style for links
     (only present in header and buttons)
     minor transition for smoothness */
-a {
-    color: white;
-    background-color: black;
-    text-decoration: none;
-    letter-spacing: 0.08rem;
-    transition: all 0.1s;
-}
 
     /* give it a nice little 'hover' effect
     (!) because the nav is of the same colour as <a>
     we mimic opacity: 0.8 with a lighter colour */
-a:hover {
+nav a:hover {
     
     text-decoration-line: underline;
 }
 
-
-
-
-
-.logo {
-    font-weight: bold;
-    background-image: url(../code/assets/img/transparent_image_v2.png); /* Ersätt med din logotyp */
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 500px; /* Anpassa bredden */
-    height: 20px; /* Anpassa höjden */
-    display: inline-block;
-}
-
-
-
-
-
-
 .nav {
-    display: flex;
-    gap: 20px; /* Mellanrum mellan länkar */
-    background-color: black;
-    padding: 10px 20px;
-}
-
-
-    /* put the nav at the top with a colour 
-.nav {
-    position: relative;
+    display:flex;
+    position: left;
     top: 10px;
-    background-color: black;
-    overflow: hidden;
-}*/
-
-    /* make the links into blocks 
+    height: 100px;
+    background-color: blue;
+   
+}
+   
 .nav a {
     float: left;
     display: block;
-    text-align: center;
     padding: 30px;
-}*/
-
-.nav a {
     text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding: 5px 10px;
+    overflow: hidden;
+    color: white;
+    letter-spacing: 0.08rem;
+    transition: all 0.1s;
 }
-/* logo 
-.logo {
-    background: url(../code/assets/img/transparent_image_v2.png) no-repeat center;
-    width: 200px;
-    height: 250px;
-    display: block;
-    /* margin-left: 30px; */
+
+.nav img {
+    height: auto;
+    width: auto;
+    padding: 30px;
+    z-index: 999;
+
+}
+
+a {
+    color: #dc71b3;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
     /* hide the menu icon (wide screens) */
